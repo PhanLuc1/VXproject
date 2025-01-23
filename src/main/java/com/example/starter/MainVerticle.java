@@ -37,7 +37,7 @@ public class MainVerticle extends AbstractVerticle {
       .listen(8888)
       // Print the port on success
       .onSuccess(server -> {
-        System.out.println("HTTP server started on port " + server.actualPort());
+        System.out.println("HTTP server started on port 8888" + server.actualPort());
         startPromise.complete();
       })
       // Print the problem on failure
